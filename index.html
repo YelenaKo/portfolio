@@ -21,6 +21,7 @@
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="js/jquery.lightbox.js"></script>
   <script src="js/templatemo_custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
   <script>
     function showhide() {
       var div = document.getElementById("newpost");
@@ -32,9 +33,11 @@
       }
     }
   </script>
+
 </head>
 
 <body>
+
   <div class="site-header">
     <div class="main-navigation">
       <div class="responsive_menu">
@@ -72,28 +75,21 @@
     <!-- gallery start -->
     <div class="content homepage" id="menu-1">
 
-      <!---------------***********************   1 part  **********************------------------>
+      <!---------------***********************   gallery  **********************------------------>
       <div class="container">
+        <div id='runaway-bee' 
+          style=" font-size: 10em; 
+          position: absolute;
+          top: 18%;
+          left: 50%;
+          z-index: 9;
+          transform: translate(-50%, -50%);
+          ">
+          &#128029;
+        </div>
+
+        <!---------------***********************   section 1  **********************------------------>
         <div class="row templatemorow">
-
-
-          <!-- 
-          <div class="hex col-sm-6">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/deadsealove-scrn.png);">
-                    <div class="overlay">
-                      <a href="images/gallery/deadsealove-scrn.png" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
 
           <div class="hex col-sm-6">
             <div>
@@ -111,24 +107,6 @@
             </div>
           </div>
 
-          <!--	 
-          <div class="hex col-sm-6">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/beit-ha-steak.jpg);" onclick="window.open('http://www.corioliss-israel.co.il/', '_blank')">
-                    <div class="overlay">
-                      <a href="images/gallery/beit-ha-steak.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br>
-                      <a href="#" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
           <div class="hex col-sm-6">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -145,24 +123,6 @@
             </div>
           </div>
 
-          <!--	
-          <div class="hex col-sm-6 templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/el-arabi.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/el-arabi.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
           <div class="hex col-sm-6 templatemo-hex-top2">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -178,24 +138,6 @@
               </div>
             </div>
           </div>
-
-          <!--
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/jeans-sport.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/jeans-sport.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
 
           <div class="hex col-sm-6  templatemo-hex-top3">
             <div>
@@ -215,24 +157,6 @@
             </div>
           </div>
 
-          <!-- 
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/bertabar.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/bertabar.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
           <div class="hex col-sm-6  templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -248,24 +172,6 @@
               </div>
             </div>
           </div>
-
-          <!--	
-          <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/casablanka.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/casablanka.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
 
           <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
             <div>
@@ -283,24 +189,6 @@
             </div>
           </div>
 
-          <!--		
-          <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/igloo.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/igloo.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link  </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
           <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -317,8 +205,6 @@
             </div>
           </div>
 
-
-          <!-- start !!!!!!!!!!!!!!!!!!!!!!! -->
           <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -334,29 +220,6 @@
               </div>
             </div>
           </div>
-
-          <!-- end  !!!!!!!!!!!!!!!!!!!!!! -->
-
-
-              <!--  
-              <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
-                <div>
-                  <div class="hexagon hexagon2 gallery-item">
-                    <div class="hexagon-in1">
-                      <div class="hexagon-in2" style="background-image: url(images/gallery/shovamburger.jpg);">
-                        <div class="overlay">
-                          <a href="images/gallery/shovamburger.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                          <br> 
-                          <a href="#" class="link" target=""> Link </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
 
           <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
             <div>
@@ -376,8 +239,10 @@
         </div>
       </div>
 
-      <!---------------***********************   2 part  **********************------------------>
+      <!---------------***********************   section 2  **********************------------------>
       <div id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
+
+        <!---------------***********************   section 2.1  **********************------------------>
         <div class="row templatemorow">
           <div class="hex col-sm-6">
             <div>
@@ -394,9 +259,7 @@
               </div>
             </div>
           </div>
-          <!--  end !!!!!!!!!!!!!!! -->
 
-          <!-- start !!!!!!!!!!!!!!!! -->
           <div class="hex col-sm-6">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -412,7 +275,6 @@
               </div>
             </div>
           </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
 
           <div class="hex col-sm-6  templatemo-hex-top2">
             <div>
@@ -432,7 +294,6 @@
             </div>
           </div>
 
-          <!-- start !!!!!!!!!!!!!!!! -->
           <div class="hex col-sm-6  templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -448,27 +309,7 @@
               </div>
             </div>
           </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
 
-          <!--
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/wish-ve-la-kvish.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/wish-ve-la-kvish.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
-          <!-- !!!!!!!!!!!!!!!!!!!https://www.schwarzkopfacademy.co.il/  -->
           <div class="hex col-sm-6  templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -487,7 +328,6 @@
             </div>
           </div>
 
-          <!-- start !!!!!!!!!!!!!!!! -->
           <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -503,26 +343,6 @@
               </div>
             </div>
           </div>
-
-          <!-- end !!!!!!!!!!!!!!!! -->
-
-          <!--   
-          <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/elfahura.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/elfahura.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
 
           <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
             <div>
@@ -541,9 +361,6 @@
             </div>
           </div>
 
-
-
-          <!-- start !!!!!!!!!!!!!!!! -->
           <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -560,25 +377,7 @@
               </div>
             </div>
           </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
 
-          <!--  
-          <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/bar-center.jpg);">
-                        <div class="overlay">
-                          <a href="images/gallery/bar-center.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                          <br> 
-                          <a href="#" class="link"  target=""> Link </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              -->
           <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
             <div>
               <div class="hexagon hexagon2 gallery-item">
@@ -599,233 +398,167 @@
 
         </div>
 
-        <!-------------***********************   3 part  **********************------------------>
+        <!---------------***********************   section 2.2  **********************------------------>
         <div class="templatemo_gallerytop">
           <div class="row templatemorow">
-          <div class="hex col-sm-6">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/tokai.jpg);" title="http://www.tokai.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/tokai.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.tokai.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--  end !!!!!!!!!!!!!!! -->
 
-          <!-- start !!!!!!!!!!!!!!!! -->
-          <div class="hex col-sm-6">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/venia-bistro.jpg);" title="http://www.venya.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/venia-bistro.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.venya.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
-
-          <div class="hex col-sm-6  templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2"
-                    style="background-image: url(images/gallery/shrimps-house.jpg); background-position: center 16px;  background-size: 462%;"
-                    title="http://shrimpshouse.webic.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/shrimps-house.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://shrimpshouse.webic.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- start !!!!!!!!!!!!!!!! -->
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/sushi-bar.jpg);" title="http://www.sushibar.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/sushi-bar.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.sushibar.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
-
-          <!--
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/wish-ve-la-kvish.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/wish-ve-la-kvish.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
-          <!-- !!!!!!!!!!!!!!!!!!!https://www.schwarzkopfacademy.co.il/  -->
-          <div class="hex col-sm-6  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2"
-                    style="background-image: url(images/gallery/schwarzkopf2.jpg); background-position: 0px 10px;  background-size: 314%;"
-                    title="https://www.schwarzkopfacademy.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/schwarzkopf2.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://schwarzkopf.barosh.me/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- start !!!!!!!!!!!!!!!! -->
-          <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/shale.jpg);" title="http://shale.webic.co.il/" >
-                    <div class="overlay">
-                      <a href="images/gallery/shale.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://shale.webic.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
-
-          <!--   
-          <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/elfahura.jpg);">
-                    <div class="overlay">
-                      <a href="images/gallery/elfahura.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="#" class="link"  target=""> Link </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-
-          <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2"
-                    style="background-image: url(images/gallery/hairextention1.jpg); background-size: 154%;" title="http://www.hair-extension.co.il/">
-                    <div class="overlay">
-                      <a href="images/gallery/hairextention1.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.hair-extension.co.il/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- start !!!!!!!!!!!!!!!! -->
-          <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2"
-                    style="background-image: url(images/gallery/hanover.jpg); background-position: right 0px; background-size: 212%;" title="http://hanoverspeech.com/">
-                    <div class="overlay">
-                      <a href="images/gallery/hanover.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.hanoverspeech.com/" class="link" target="_blank"> Website </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end !!!!!!!!!!!!!!!! -->
-
-          <!--  
-          <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2" style="background-image: url(images/gallery/bar-center.jpg);">
-                        <div class="overlay">
-                          <a href="images/gallery/bar-center.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                          <br> 
-                          <a href="#" class="link"  target=""> Link </a>
-                        </div>
+            <div class="hex col-sm-6">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2" style="background-image: url(images/gallery/tokai.jpg);" title="http://www.tokai.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/tokai.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.tokai.co.il/" class="link" target="_blank"> Website </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              -->
-          <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
-            <div>
-              <div class="hexagon hexagon2 gallery-item">
-                <div class="hexagon-in1">
-                  <div class="hexagon-in2"
-                    style="background-image: url(images/gallery/mosheuzan.jpg); background-size: 311%;  background-position: -195px -84px;"
-                    title="http://www.mosheuzan.co.il/" >
-                    <div class="overlay">
-                      <a href="images/gallery/mosheuzan.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                      <br> 
-                      <a href="http://www.mosheuzan.co.il/" class="link" target="_blank"> Website </a>
+            </div>
+
+            <div class="hex col-sm-6">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2" style="background-image: url(images/gallery/venia-bistro.jpg);" title="http://www.venya.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/venia-bistro.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.venya.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          
+            <div class="hex col-sm-6  templatemo-hex-top2">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2"
+                      style="background-image: url(images/gallery/shrimps-house.jpg); background-position: center 16px;  background-size: 462%;"
+                      title="http://shrimpshouse.webic.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/shrimps-house.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://shrimpshouse.webic.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <!------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="hex col-sm-6  templatemo-hex-top3">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2" style="background-image: url(images/gallery/sushi-bar.jpg);" title="http://www.sushibar.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/sushi-bar.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.sushibar.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hex col-sm-6  templatemo-hex-top3">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2"
+                      style="background-image: url(images/gallery/schwarzkopf2.jpg); background-position: 0px 10px;  background-size: 314%;"
+                      title="https://www.schwarzkopfacademy.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/schwarzkopf2.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://schwarzkopf.barosh.me/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2" style="background-image: url(images/gallery/shale.jpg);" title="http://shale.webic.co.il/" >
+                      <div class="overlay">
+                        <a href="images/gallery/shale.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://shale.webic.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2"
+                      style="background-image: url(images/gallery/hairextention1.jpg); background-size: 154%;" title="http://www.hair-extension.co.il/">
+                      <div class="overlay">
+                        <a href="images/gallery/hairextention1.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.hair-extension.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2"
+                      style="background-image: url(images/gallery/hanover.jpg); background-position: right 0px; background-size: 212%;" title="http://hanoverspeech.com/">
+                      <div class="overlay">
+                        <a href="images/gallery/hanover.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.hanoverspeech.com/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+              <div>
+                <div class="hexagon hexagon2 gallery-item">
+                  <div class="hexagon-in1">
+                    <div class="hexagon-in2"
+                      style="background-image: url(images/gallery/mosheuzan.jpg); background-size: 311%;  background-position: -195px -84px;"
+                      title="http://www.mosheuzan.co.il/" >
+                      <div class="overlay">
+                        <a href="images/gallery/mosheuzan.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                        <br> 
+                        <a href="http://www.mosheuzan.co.il/" class="link" target="_blank"> Website </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!------------------------------------------------------------------------------------------------------------------------------------------->
           </div>
         </div>
       </div>
-<!------------------------------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------------------------------------------------------------->
 
       <div class="container">
         <div class="row">
@@ -838,56 +571,30 @@
     <!-- gallery end -->
 
     <div class="clear"></div>
-    <!-- service start -->
-    
-    <!-- service end -->
+
     <!-- contact start -->
     <div class="content contact" id="menu-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="templatemo_contactmap">
-              <div id="templatemo_map"></div>
-              <img src="images/templatemo_contactiframe1.png" alt="contact map">
+          <div class="col-md-3 col-sm-12 ">
+            <div class="templatemo_contacttitle">
+              <h2>Contact Information</h2>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-12 leftalign">
-            <div class="templatemo_contacttitle">Contact Information</div>
-            <div class="clear"></div>
-
             <div class="templatemo_address">
               <ul>
                 <li class="left fa fa-map-marker"></li>
-                <li class="right">Winnipeg <br></li>
+                <li class="right"> Toronto <br></li>
                 <li class="clear"></li>
-                <li class="left fa fa-phone"></li>
-                <li class="right">204-396-9747</li>
-                <li class="clear"></li>
-                <!---->
                 <li class="left fa fa-envelope"></li>
                 <li class="right">yelenawm@gmail.com</li>
               </ul>
             </div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <!--	<form role="form">
-              	<div class="templatemo_form">
-                	<input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
-              	</div>
-              	<div class="templatemo_form">
-                	<input name="email" type="text" class="form-control" id="email" placeholder="Your Email" maxlength="40">
-              	</div>
-               	<div class="templatemo_form">
-                	<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" maxlength="40">
-              	</div>
-              	<div class="templatemo_form">
-	            	<textarea name="message" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
-              	</div>
-              	<div class="templatemo_form"><button type="button" class="btn btn-primary">Send Message</button></div>
-            </form>-->
+          </div>  
+          <div class="clear"></div>          
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11543.991907125408!2d-79.39159399999998!3d43.669011899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1667488336125!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -900,31 +607,6 @@
       <div class="row">
         <div class="col-md-9 col-sm-12">
           <span>Copyright &copy; 2015 YelenaWm</span>
-        </div>
-        <div class="col-md-3 col-sm-12 templatemo_rfooter">
-          <a href="#">
-            <div class="hex_footer">
-              <span class="fa fa-facebook"></span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="hex_footer">
-              <span class="fa fa-twitter"></span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="hex_footer">
-              <span class="fa fa-linkedin"></span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="hex_footer">
-              <span class="fa fa-rss"></span>
-            </div>
-          </a>
-
-
-
         </div>
       </div>
     </div>
@@ -940,6 +622,30 @@
         $this.text('Load Less');
       }
     });
+  </script>
+  <script>
+    const button = document.getElementById("runaway-bee");
+
+    const animateMove = (element, prop, pixels) =>
+      anime({
+        targets: element,
+        [prop]: `${pixels}px`,
+        easing: "easeOutCirc"
+      });
+
+    ["mouseover", "click"].forEach(function (el) {
+      button.addEventListener(el, function (event) {
+        const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+        const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+        animateMove(this, "left", left).play();
+        animateMove(this, "top", top).play();
+      });
+    });
+
+    const getRandomNumber = (num) => {
+      return Math.floor(Math.random() * (num + 1));
+    };  
   </script>
 
 </body>
