@@ -1,22 +1,3 @@
-/*
-
-Polygon Template 
-
-http://www.templatemo.com/free-website-templates/400-polygon
-
-*/
-/*************added ****/
-.col-md-3.col-sm-12.templatemo_rfooter {
-	display: none;
-}
-
-.col-md-3.col-sm-12 a {
-	font-size: 70px;
-	color: #fff;
-	/* margin: 100px 0 0 124px;     */
-}
-
-/*********************/
 html,
 body {
 	font-family: Tahoma, Arial;
@@ -88,11 +69,6 @@ h3 {
 	font-size: 16px;
 }
 
-/*img {
-  	max-width: 100%;
-  	height: auto;
-  	width:100%;
-}*/
 .clear {
 	clear: both;
 }
@@ -101,6 +77,14 @@ h3 {
 	margin: 15px auto;
 }
 
+.col-md-3.col-sm-12.templatemo_rfooter {
+	display: none;
+}
+
+.col-md-3.col-sm-12 a {
+	font-size: 70px;
+	color: #fff;
+}
 /* Menu */
 span.fa {
 	width: 100%;
@@ -241,6 +225,8 @@ a.menu-toggle-btn {
 	-o-transform: rotate(-60deg);
 	-ms-transform: rotate(-60deg);
 	transform: rotate(-60deg);
+	clip: rect(auto 220px 240px auto);
+	position: absolute;
 }
 
 .hexagon-in2 {
@@ -571,22 +557,6 @@ a:hover .hex_footer {
 }
 
 .gallery-item .overlay a {
-	/* color: #2a2a2a;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
-  line-height: 32px;
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  margin-top: -37px;
-  margin-left: -16px;*/
-
 	color: #ffffff;
 	width: 68%;
 	height: 23%;
@@ -777,7 +747,9 @@ a.link {
 	.templatemorow {
 		margin: 0 5%;
 	}
-
+	.hexagon-in1{
+		clip: rect(auto, 109px, 126px, auto);
+	}
 	.hexagon2 {
 		position: absolute;
 		width: 110px;
@@ -909,6 +881,10 @@ a.link {
 		margin: 0 10%;
 	}
 
+	.hexagon-in1 {
+	clip: rect(auto, 230px, 246px, auto);
+	}
+	
 	.hexagon2 {
 		position: absolute;
 		width: 200px;
@@ -1033,19 +1009,14 @@ a.link {
 
 }
 
-@media(min-width:768px) and (max-width: 860px) {
+@media(min-width:768px) and (max-width: 991px) {
 	.templatemo_gallerytop {
-		margin-top: 15%;
+		margin-top: 110px;
 	}
+
 }
 
-@media(min-width:861px) and (max-width: 991px) {
-	.templatemo_gallerytop {
-		margin-top: 14%;
-	}
-}
-
-@media(min-width:992px) {
+@media(min-width:991px) {
 	.templatemorow {
 		margin: 0 7%;
 	}
@@ -1060,7 +1031,6 @@ a.link {
 	.templatemo-hex-top1 {
 		margin-top: 140px;
 	}
-
 }
 
 @media(min-width:992px) and (max-width: 1200px) {
@@ -1102,13 +1072,13 @@ a.link {
 
 @media(min-width:992px) and (max-width: 1390px) {
 	.templatemo_gallerytop {
-		margin-top: 15%;
+		margin-top: 138px;
 	}
 }
 
 @media(min-width:1400px) and (max-width:1600px) {
 	.templatemo_gallerytop {
-		margin-top: 14%;
+		margin-top: 181px;
 	}
 }
 
@@ -1181,24 +1151,6 @@ a.link {
 		margin-top: 10px;
 		width: 100%;
 	}
-
-}
-
-.content {
-	display: none;
-	height: auto;
-}
-
-.homepage {
-	display: block;
-}
-
-.leftalign {
-	float: left;
-}
-
-
-@media (max-width: 991px) {
 	.responsive-menu {
 		background: #353535;
 	}
@@ -1213,5 +1165,35 @@ a.link {
 		top: 47%;
 	}
 
+	.hexagon-in1 {
+		clip: rect(auto, 119px, 212px, auto);
+	}
 
+}
+@media (max-width: 767px) {
+	.hexagon-in1 {
+		clip: rect(auto, 230px, 246px, auto);
+	}
+}
+@media (max-width: 559px) {
+	.hexagon-in1 {
+		clip: rect(auto, 155px, 174px, auto);
+	}
+}
+@media (max-width: 419px) {
+	.hexagon-in1 {
+		clip: rect(auto, 109px, 130px, auto);
+	}
+}
+.content {
+	display: none;
+	height: auto;
+}
+
+.homepage {
+	display: block;
+}
+
+.leftalign {
+	float: left;
 }
